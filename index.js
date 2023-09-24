@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(cors({
-    origin:"http://localhost:5174",
+    origin:"https://airstay.bishnoi.live",
     credentials:true,
 }));
 mongoose.connect(process.env.MONGO_URL);
